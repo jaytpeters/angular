@@ -5,6 +5,10 @@ module.exports = function(app) {
         res.sendFile(__dirname + 'index.html');
     });
 
+    app.get('/tasks', function(req, res) {
+        tasks.readAll(req,res);
+    })
+
     app.get('/:id', function(req, res) {
         tasks.read(req,res);
     });
