@@ -1,0 +1,30 @@
+.container {
+    border: 1px solid black;
+    padding: 20px;
+    width: 1100px;
+    margin-bottom: 15px;
+}
+.location {
+    width: 200px;
+    margin: 25px;
+    padding: 10px;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+}
+h1 {
+    font-size: 24px;
+}
+.description {
+    color: darkblue;
+    font-size: 16px;
+}
+#gold {
+    font-size: 28px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    margin-bottom: 10px;
+}
