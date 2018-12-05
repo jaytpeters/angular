@@ -2,10 +2,12 @@ var express = require('express');
 var mongoose = require('mongoose');
 var path = require('path');
 var bodyParser = require('body-parser');
+const cors = require('cors');
 
 var app = express();
 
 app.use(bodyParser.json());
+app.use(cors());
 app.use(express.static(__dirname + '/public/dist/public'));
 require('./server/config/mongoose.js');
 const routes = require('./server/config/routes.js')(app);
