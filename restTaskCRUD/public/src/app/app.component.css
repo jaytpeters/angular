@@ -1,0 +1,64 @@
+#newTask {
+    margin: 20px;
+    padding: 10px;
+    width: 500px;
+}
+
+#newTaskForm {
+    width: 100%;
+}
+
+.formRow {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.tasksDiv {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.leftCol {
+    width: 40%;
+    text-align: left;
+    padding: 5px;
+    background-color: lightgray;
+    display: inline-block;
+}
+
+.rightCol {
+    width: 40%;
+    padding: 5px;
+    display: inline-block;
+}
+
+.createCol {
+    width: 10%;
+    display: inline-block;
+}
+
+#taskList {
+    margin: 20px;
+    padding: 10px;
+    width: 350px;
+    display: inline-block;
+}
+
+.taskDetails {
+    width: 60%;
+    display: inline-block;
+}
+
+.taskMethods {
+    width: 40%;
+    display: inline-block;
+}
+
+#editTask {
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+}

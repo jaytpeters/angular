@@ -49,11 +49,11 @@ module.exports = {
     update: function(req,res) {
         var id = req.params.id;
 
-        Task.findByIdAndUpdate({"_id":Object(id)}, {"title":req.body.title, "description":req.body.description, "completed":req.body.completed}, function(err) {
+        Task.findByIdAndUpdate({"_id":Object(id)}, {"title":req.body.title, "description":req.body.description}, function(err) {
             if(err) {
                 console.log("something went wrong");
             } else {
-                res.redirect('/');
+                res.json({"title":req.body.title, "description":req.body.description});
             }
         })
     }
