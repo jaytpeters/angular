@@ -1,0 +1,23 @@
+.appCake {
+    vertical-align: top;
+}
+
+h1 {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.comments {
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+img {
+    width: 500px;
+}
+
+.largeImage {
+    display: inline-block;
+    margin: 20px;
+}

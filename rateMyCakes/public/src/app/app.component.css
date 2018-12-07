@@ -1,0 +1,60 @@
+.cakeItem {
+    overflow-y: scroll;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+.cakeImage {
+     width: 250px;
+     margin-right: 15px;
+     display: inline-block;
+}
+
+.cakeOptions {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.cakeOptionSelect {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.cakeOptionText {
+    margin-bottom: 10px;
+    display: block;
+}
+
+#submitCake {
+    width: 350px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    vertical-align: top;
+}
+
+#cakeList {
+    width: 500px;
+    display: inline-block;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.cakeOptions select {
+    display: block;
+}
+
+@media screen and (min-width: 400px) {
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 7px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    }
+}

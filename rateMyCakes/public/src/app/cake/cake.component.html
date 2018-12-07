@@ -1,0 +1,12 @@
+<div class="appCake">
+  <h1>Baked By: {{cakeToShow.baker}}</h1><br/>
+  <div class="largeImage">
+    <img [src]="cakeToShow.image"/>
+  </div>
+  <div class="comments">
+    <p>Average rating: {{cakeToShow.avgRating}}</p>
+    <div *ngFor="let cakeComment of cakeToShow.comments">
+      <p>{{cakeComment.comment}}</p>
+    </div>
+  </div>
+</div>
