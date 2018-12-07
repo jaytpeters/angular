@@ -16,10 +16,6 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.newCake = {baker: "", image: "", comments: []};
     this.getCakes();
-
-    //https://www.biggerbolderbaking.com/wp-content/uploads/2017/08/1C5A0056.jpg
-    //https://tatyanaseverydayfood.com/wp-content/uploads/2016/09/thumbnail-2.jpg
-    //https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wedding_cake_with_pillar_supports%2C_2009.jpg/1200px-Wedding_cake_with_pillar_supports%2C_2009.jpg
   }
 
   onAddCake() {
