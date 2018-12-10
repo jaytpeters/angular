@@ -1,0 +1,9 @@
+table {
+    border: 1px solid black;
+}
+
+th {
+    color: white;
+    background-color: lightgray;
+    font-size: 20px;
+}

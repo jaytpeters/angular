@@ -1,0 +1,15 @@
+<p><a href="">Home</a></p>
+Edit this author<br/>
+{{errors}}<br/>
+<table>
+  <tr>
+    <td colspan="2">Name:</td>
+  </tr>
+  <tr>
+    <td colspan="2"><input type="text" name="author" [(ngModel)]="author.name"></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="Cancel" (click)="cancel()"/></td>
+    <td><input type="button" value="Submit" (click)="update()"/></td>
+  </tr>
+</table>
