@@ -1,0 +1,22 @@
+<div class="new">
+  <h1>Create a New Product</h1><br/>
+  {{ errors }}<br/>
+  <table>
+    <tr>
+      <td>Title</td>
+      <td><input type="text" [(ngModel)]="name"/></td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td><input type="text" [(ngModel)]="price"/></td>
+    </tr>
+    <tr>
+      <td>Image url</td>
+      <td><input type="text" [(ngModel)]="image"/></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="button" value="Create" (click)="create()"> <input type="button" value="Cancel" (click)="cancel()"/></td>
+    </tr>
+  </table>
+</div>

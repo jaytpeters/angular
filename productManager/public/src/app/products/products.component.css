@@ -1,0 +1,20 @@
+.products {
+    width: 950px;
+}
+
+.productTile {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    font-size: 16px;
+    width: 250px;
+    height: 200px;
+    line-height: 20px;
+    margin-right: 30px;
+}
+
+input {
+    margin-right: 10px;
+}

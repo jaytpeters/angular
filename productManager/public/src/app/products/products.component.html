@@ -1,0 +1,11 @@
+<div class="products">
+  <h1>Products List</h1>
+  <div *ngFor="let product of products" class="productTile">
+    <img [src]="product.image"/><br/>
+    {{product.name}}<br/>
+    ${{product.price}}<br/>
+    <input type="button" value="Edit" (click)="edit(product._id)"/> <input type="button" value="Delete" (click)="delete(product._id)"/>
+  </div>
+  <router-outlet>
+  </router-outlet>
+</div>
