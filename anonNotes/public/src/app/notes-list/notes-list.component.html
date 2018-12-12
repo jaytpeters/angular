@@ -1,0 +1,8 @@
+<div class="notes">
+  <div class="note" *ngFor="let note of notesToShow">
+    <div class="dateCreated">
+      Noted on: {{note.createdAt}}
+    </div>
+    {{note.note}}
+  </div>
+</div>

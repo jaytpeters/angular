@@ -1,0 +1,14 @@
+<div class="root">
+  <h1>Anonymous Notes</h1>
+  <div class="addNote">
+    {{ errors }}
+    <table>
+      <tr>
+        <td>Note:</td>
+        <td><input class="addText" type="text" [(ngModel)]="newNote"/><input class="addButton" type="button" value="Add Note" (click)="addNote()"/></td>
+      </tr>
+    </table>
+  </div>
+
+  <app-notes-list *ngIf="notes" [notesToShow]="notes"></app-notes-list>
+</div>
