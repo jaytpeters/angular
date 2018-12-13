@@ -1,0 +1,28 @@
+table {
+    width: 900px;
+    border: 1px solid black;
+}
+
+td {
+    padding: 10px;
+}
+
+.playingButton {
+    margin-right: 10px;
+    background-color: green;
+}
+
+.notplayingButton {
+    margin-right: 10px;
+    background-color: red;
+}
+
+.undecidedButton {
+    margin-right: 10px;
+    background-color: yellow;
+}
+
+.disabledButton {
+    margin-right: 10px;
+    background-color: lightgray;
+}

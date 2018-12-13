@@ -1,0 +1,60 @@
+<div class="statusGame">
+  <table>
+    <tr>
+      <th>Team Name</th>
+      <th>Actions</th>
+    </tr>
+    <tr *ngFor="let player of players">
+      <td>
+        {{player.name}}
+      </td>
+      <td>
+        <div *ngIf="game === 'game1'">
+          <input *ngIf="checkStatus(player, 'playing'); else elsePlaying1" class="playingButton" (click)="changeAction(player, 'undecided')" type="button" value="Playing"/>
+          <ng-template #elsePlaying1>
+            <input class="disabledButton" type="button" (click)="changeAction(player, 'playing')" value="Playing"/>
+          </ng-template>
+          <input *ngIf="checkStatus(player, 'notplaying'); else elseNotPlaying1" class="notplayingButton" (click)="changeAction(player, 'undecided')" type="button" value="Not Playing"/>
+          <ng-template #elseNotPlaying1>
+            <input class="disabledButton" type="button" (click)="changeAction(player, 'notplaying')" value="Not Playing"/>
+          </ng-template>
+          <input *ngIf="checkStatus(player, 'undecided'); else elseUndecided1" class="undecidedButton" type="button" value="Undecided"/>
+          <ng-template #elseUndecided1>
+            <input class="disabledButton" type="button" (click)="changeAction(player, 'undecided')" value="Undecided"/>
+          </ng-template>
+        </div>
+
+        <div *ngIf="game === 'game2'">
+            <input *ngIf="checkStatus(player, 'playing'); else elsePlaying2" class="playingButton" (click)="changeAction(player, 'undecided')" type="button" value="Playing"/>
+            <ng-template #elsePlaying2>
+              <input class="disabledButton" type="button" (click)="changeAction(player, 'playing')" value="Playing"/>
+            </ng-template>
+            <input *ngIf="checkStatus(player, 'notplaying'); else elseNotPlaying2" class="notplayingButton" (click)="changeAction(player, 'undecided')" type="button" value="Not Playing"/>
+            <ng-template #elseNotPlaying2>
+              <input class="disabledButton" type="button" (click)="changeAction(player, 'notplaying')" value="Not Playing"/>
+            </ng-template>
+            <input *ngIf="checkStatus(player, 'undecided'); else elseUndecided2" class="undecidedButton" type="button" value="Undecided"/>
+            <ng-template #elseUndecided2>
+              <input class="disabledButton" type="button" (click)="changeAction(player, 'undecided')" value="Undecided"/>
+            </ng-template>
+          </div>
+
+          <div *ngIf="game === 'game3'">
+            <input *ngIf="checkStatus(player, 'playing'); else elsePlaying3" class="playingButton" (click)="changeAction(player, 'undecided')" type="button" value="Playing"/>
+            <ng-template #elsePlaying3>
+              <input class="disabledButton" type="button" (click)="changeAction(player, 'playing')" value="Playing"/>
+            </ng-template>
+            <input *ngIf="checkStatus(player, 'notplaying'); else elseNotPlaying3" class="notplayingButton" (click)="changeAction(player, 'undecided')" type="button" value="Not Playing"/>
+            <ng-template #elseNotPlaying3>
+              <input class="disabledButton" type="button" (click)="changeAction(player, 'notplaying')" value="Not Playing"/>
+            </ng-template>
+            <input *ngIf="checkStatus(player, 'undecided'); else elseUndecided3" class="undecidedButton" type="button" value="Undecided"/>
+            <ng-template #elseUndecided3>
+              <input class="disabledButton" type="button" (click)="changeAction(player, 'undecided')" value="Undecided"/>
+            </ng-template>
+          </div>
+  
+      </td>
+    </tr>
+  </table>
+</div>

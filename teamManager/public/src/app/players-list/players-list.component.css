@@ -1,0 +1,23 @@
+table {
+    border: 1px solid black;
+    width: 900px;
+    margin-top: 20px;
+}
+
+
+th {
+    font-size: 14px;
+    background-color: darkgray;
+    padding: 5px;
+}
+
+.deleteButton {
+    background-color: red;
+}
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+td {
+    padding: 5px;
+}

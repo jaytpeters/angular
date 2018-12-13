@@ -1,0 +1,18 @@
+<div class="addPlayer">
+    <h1>Add Player</h1><br/>
+    {{ errors }}<br/>
+    <table>
+      <tr>
+        <td>Player Name:</td>
+        <td><input id="playerName" type="text" (keyup)="toggleAddButton()" [(ngModel)]="name"/></td>
+      </tr>
+      <tr>
+        <td>Preferred Position:</td>
+        <td><input type="text" [(ngModel)]="position"/></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><input class="addButton" type="button" value="ADD" (click)="addPlayer()"/></td>
+      </tr>
+    </table>
+</div>
